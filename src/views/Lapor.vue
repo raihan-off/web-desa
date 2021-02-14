@@ -1,22 +1,25 @@
 <template>
-  <div class="lapor">
-    <h1>Pengaduan</h1>
-    <h4>quis ullamco officia adipisicing excepteur do ad excepteur.</h4>
-    <div class="inspire pa-16">
-      <form>
-        <v-text-field v-model="name" label="Name"></v-text-field>
+  <div class="lapor mt-16 mb-16">
+    <h2>Pengaduan</h2>
+    Halaman mengadukan masalah atau laporan mengenai desa
+    <v-col class="inspire form pa-16">
+      <form style="width: 50%">
+        <v-text-field outlined v-model="name" label="Name"></v-text-field>
         <v-text-field
+          outlined
           v-model="email"
           :error-messages="emailErrors"
-          label="email"
+          label="Email"
           reqiured
           @input="$v.email.$touch()"
           @blur="$v.email.$touch()"
         ></v-text-field>
-        <v-textarea></v-textarea>
-        <v-btn @click="submit">Submit</v-btn>
+        <v-textarea outlined v-model="input" label="Masukan"></v-textarea>
+        <v-btn block class="submit" color="red" @click="submit"
+          >Kirim Pengaduan</v-btn
+        >
       </form>
-    </div>
+    </v-col>
   </div>
 </template>
 
@@ -53,5 +56,17 @@ export default {
 </script>
 
 <style scoped>
+.lapor {
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+}
+
+.submit {
+  color: aliceblue;
+}
 </style>
 

@@ -29,17 +29,27 @@
     </div>
     <div class="quote pa-16">
       <div class="pemimpin"></div>
-      <div class="ucapan">
-        <h3 class="text--white">
-          Selamat datang di Website resmi Pemerintah Desa Sukamaju Kecamatan
-          Belik Kabupaten Pemalang Provinsi Jawa Tengah. Ini adalah ruang media
-          informasi desa sebagai sarana komunikasi dan keterbukaan informasi
-          publik. Jangan lupa selalu ikuti website dan media sosial kami untuk
-          update informasi dalam penyelenggaran pemerintahan di Desa Sukamaju.
-          Terima kasih sudah mengunjungi website kami. Semoga bermanfaat, kritik
-          dan saran selalu kami harapkan untuk desa yang lebih baik
-        </h3>
-      </div>
+      <v-row class="ucapan">
+        <div class="muka" style="width: 50%">
+          <h3>Saya adalah kepala desa desa ini</h3>
+        </div>
+        <div class="kata" style="width: 50%">
+          <h3 class="text--white">
+            Selamat datang di Website resmi Pemerintah Desa Sukamaju Kecamatan
+            Belik Kabupaten Pemalang Provinsi Jawa Tengah. Ini adalah ruang
+            media informasi desa sebagai sarana komunikasi dan keterbukaan
+            informasi publik. Jangan lupa selalu ikuti website dan media sosial
+            kami untuk update informasi dalam penyelenggaran pemerintahan di
+            Desa Sukamaju. Terima kasih sudah mengunjungi website kami. Semoga
+            bermanfaat, kritik dan saran selalu kami harapkan untuk desa yang
+            lebih baik
+          </h3>
+        </div>
+      </v-row>
+    </div>
+    <div class="pengurus">
+      <h3>Struktur Organisasi</h3>
+      <h4>Struktur Organisasi yang terdapet di Desa Sukamaju</h4>
     </div>
   </div>
 </template>
@@ -118,5 +128,15 @@ export default {
   background-image: url("../assets/back-quote.png");
   background-repeat: no-repeat;
   background-size: 100%;
+}
+
+.ucapan {
+  display: flex;
+  flex-direction: row;
+}
+
+.pengurus {
+  padding: 5%;
+  text-align: center;
 }
 </style>
